@@ -1,0 +1,296 @@
+<!--Paul Stanfield - B00447788 - Assignment 2 - COM601 -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>Shakespeare In A Browser</title>
+	
+<!--Fonts Load, jQuery and jQuery UI Load and Array Load -->
+	
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	     
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>		
+     
+<script src="scripts/jquery-ui.js"></script>
+	       	
+<script type="text/javascript" src="scripts/uniqueArray.js"></script>
+
+
+<!--Javascript file load for the functions of the RIA -->
+	
+<script type="text/javascript" src="scripts/shakespearescripts.js"></script>
+	
+	
+<!--CSS style-->
+	
+<link type="text/css" href="css/mainstyle.css" rel="stylesheet" />
+
+
+<!--Short jQuery Scripts-->
+	
+
+	
+   
+
+</head>
+
+<body> 
+
+<div id="top"></div>
+
+<div id="wrapper">
+	
+	<!--header text that changes depending on what play your are viewing-->
+	
+	
+	
+<header><span>Shakespeare's Plays<span></header>
+	
+	
+   <!--Beginning of navigation-->
+	
+<div id="search_holder">
+
+<center>
+
+
+<button type="button"id="home-btn"onclick="location.href='index.html'">home</button>
+
+		  
+<button type="button" id="help-btn">Help</button>
+
+
+<input id="term-search-btn" type="submit" value="Search" title="Select a play from the left side menu, then type in a phrase or word in the search box and click the search button"/> <input id="term_search" type="text" value="Search Within A Play" maxlength="128" /> <a href="index.html#" class="tooltip" title=""></a>
+    
+      		  
+<div id="break"></div>
+
+
+
+</div>	
+</center>
+
+</hgroup>	
+	
+	
+    <!--controls / left column -->
+	
+<div id="controls">
+		
+    <!--accordion-->
+		
+<div id="accordion">
+
+         <h3 class="comedies">Comedies</h3>
+
+            <ul class="comedies">
+
+               <li id="all_well.xml" class="comedy">All's Well That Ends Well</li> 
+
+               <li id="as_you.xml" class="comedy">As You Like It</li> 
+
+               <li id="com_err.xml" class="comedy">The Comedy of Errors</li> 
+
+               <li id="cymbelin.xml" class="comedy">Cymbeline</li> 
+
+               <li id="lll.xml" class="comedy">Love's Labours Lost</li> 
+
+               <li id="m_for_m.xml" class="comedy">Measure for Measure</li> 
+
+               <li id="m_wives.xml" class="comedy">The Merry Wives of Windsor</li> 
+
+               <li id="merchant.xml" class="comedy">The Merchant of Venice</li> 
+
+               <li id="dream.xml" class="comedy">A Midsummer Night's Dream</li> 
+
+               <li id="much_ado.xml" class="comedy">Much Ado About Nothing</li> 
+
+               <li id="pericles.xml" class="comedy">Pericles, Prince of Tyre</li> 
+
+               <li id="taming.xml" class="comedy">The Taming of the Shrew</li> 
+
+               <li id="tempest.xml" class="comedy">The Tempest</li> 
+  
+               <li id="troilus.xml" class="comedy">Troilus and Cressida</li> 
+
+               <li id="t_night.xml" class="comedy">Twelfth Night</li> 
+
+               <li id="two_gent.xml" class="comedy">Two Gentlemen of Verona</li> 
+
+               <li id="win_tale.xml" class="comedy">The Winter's Tale</li>
+
+            </ul>
+
+        <h3 class= "histories">Histories</h3>
+
+           <ul class= "histories">
+
+              <li id="hen_iv_1.xml" class="history">Henry IV, Part I</li> 
+
+              <li id="hen_iv_2.xml" class="history">Henry IV, Part II</li> 
+
+              <li id="hen_v.xml" class="history">Henry V</li> 
+
+              <li id="hen_vi_1.xml" class="history">Henry VI, Part I</li> 
+
+              <li id="hen_vi_2.xml" class="history">Henry VI, Part II</li> 
+
+              <li id="hen_vi_3.xml" class="history">Henry VI, Part III</li> 
+
+              <li id="hen_viii.xml" class="history">Henry VIII</li> 
+
+              <li id="john.xml" class="history">King John</li> 
+
+              <li id="rich_ii.xml" class="history">Richard II</li> 
+
+              <li id="rich_iii.xml" class="history">Richard III</li>
+
+           </ul>
+
+       <h3 class="tragedies">Tragedies</h3>
+
+           <ul class="tragedies">
+
+              <li id="a_and_c.xml" class="tragedy">Antony and Cleopatra</li> 
+
+              <li id="coriolan.xml"  class="tragedy">Coriolanus</li> 
+
+              <li id="hamlet.xml"  class="tragedy">Hamlet</li> 
+
+              <li id="j_caesar.xml"  class="tragedy">Julius Caesar</li> 
+
+              <li id="lear.xml" class="tragedy">King Lear</li> 
+
+              <li id="macbeth.xml" class="tragedy">Macbeth</li> 
+
+              <li id="othello.xml" class="tragedy">Othello</li> 
+
+              <li id="r_and_j.xml" class="tragedy">Romeo and Juliet</li> 
+
+              <li id="timon.xml" class="tragedy">Timon of Athens</li> 
+
+              <li id="titus.xml" class="tragedy">Titus Andronicus</li>
+
+          </ul>
+			
+</div>
+			
+			
+</div>
+		
+		
+		<!--middlie colum / main output / main dynamic content area-->
+
+ <div id="mainOutput">
+		
+			<!--tooltip content for how to work and navigate the RIA-->	
+			
+<div id="dialog" >
+		
+		<p>**Move this window around with your mouse to your preferred location</p>
+		
+<hr>
+		
+		<h1>View Play</h1>
+		
+		<p>View a play that you desire to check out by selecting one from the left hand side. Simply click on              a play name to access it.</p>
+		
+
+		<h1>View Act / Scene</h1>
+		
+		<p>View an act of a particular scene by clicking over the desired act you.</p>
+		
+		<h1>Select A Speaker.</h1>
+		
+		<p>You can select a speaker by choosing one from the drop down box on the right hand side when you have selected a play of your choice.</p>
+		
+		<h1>Search Selected Play</h1>
+		
+		<p>Search a selected play by using the search bar at the top of the screen and then clicking search. You can search for words or phrases in your selected play.</p>
+		
+				
+</div>
+		
+		<!--Main dynamic content area-->
+		
+<div id="showcontent">
+		
+			
+<div id="bio">
+		
+		   <img class="toplad" src="images/shakespeare.png"/>
+
+		
+      	   <h3>About Shakespeare</h3>
+		
+		   <p>William Shakespeare (1564 - 1616) was born at Stratford-upon-Avon in a house in Henley Street. This is preserved intact. His mother, Mary Arden, was one of the daughters of Robert Arden, a yeoman farmer of Wilmcote: his father, John Shakespeare, was a glover and wool dealer of good standing who held the office of Bailiff of the Borough in 1568.</p>
+
+		  <p>From the age of seven to about 14, he attended Stratford Grammar School receiving an excellent well rounded education. At the age of 18 Shakespeare married Anne Hathaway, who was seven years his senior and three months pregnant. She was of 'yeoman' stock - her family owned a farm one mile west of Stratford in Shottery. He endured her until he could stand it no longer and fled to London to become an actor. .</p>
+		
+		  <p>Shakespeare's acting career was spent with the Lord Chamberlain's Company, where he was a first-rate actor. The company was renamed the King's Company in 1603 when James succeeded to the throne. Among the actors in the group was the famous Richard Burbage. The partnership acquired interests in two theatres in the Southwark area of London, near the banks of the Thames - the Globe and the Blackfriars. Shakespeare died at the age of 52 and now lies at rest in his special grave at Holy Trinity Church.</p>
+		
+
+
+
+
+</div>
+
+</div>
+				
+</div>
+		
+		<!--right column housing shakespeare quotes and dynamic content of play information corresponding to the selected play-->
+
+<div id="sideInfo">
+	        
+	       <h3>SHAKESPEARE QUOTES</h3>
+	       
+           </br>
+              
+	       <p>'Love all, trust a few, do wrong to none.'</p>  
+	         
+	       </br>
+	        
+	       <p>'Some are born great, some achieve greatness, and some have greatness thrust upon them.'</p>  
+	       
+	       </br>
+	        
+	        <p>'Expectation is the root of all heartache.'</p>  
+	        
+	        </br>
+	        
+	        <p>'To thine own self be true, and it must follow, as the night the day, thou canst not then be false to any man.'</p>  
+	        
+	        </br>
+	        
+	        <p>'As soon go kindle fire with snow, as seek to quench the fire of love with words.'</p>  
+	        
+	        </br>
+	        
+	        <p>'Ignorance is the curse of God; knowledge is the wing wherewith we fly to heaven.'</p>
+	        
+	       </br>
+	      
+	    	        
+</div>
+
+           <footer>
+           
+           <h6 style="margin-top:20px; margin-bottom:20px"><p><a href="http://www.paulstanfield.co.uk" title="Click to see my online portfolio">A COM601 Assignment By Paul Stanfield </a> </h6> 
+           
+           </footer>
+		
+
+</div>
+
+</body>
+
+</html>
+

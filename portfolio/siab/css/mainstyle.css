@@ -1,0 +1,626 @@
+/*Paul Stanfield - B00447788 - Assignment 2 - COM601 */
+
+
+/* Basic */
+
+body{
+
+  font-family: 'Lato', sans-serif;  font-size: 13.3px;
+  background-color:#FFFFFF;
+  color:#A1A9B1;
+    
+}
+
+
+p{
+
+  line-height: 200%;
+}
+
+/* Top Border */
+
+#top {
+	
+	background: #26B190;
+	position: fixed;
+
+}
+		
+#top {
+    
+    left: 0; right: 0;
+    height:15px;
+		
+}
+		
+		
+#top {
+   
+     top: 0;
+     
+}
+
+
+
+/* Wrapper */
+
+#wrapper {
+
+  margin: 0 auto;
+  width: 1068px;
+
+}
+
+
+/* Header Text */
+
+
+header {
+  
+  color:#0F1419;
+  font-size:40px;
+  width: 100%;
+  height: 20px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing:4px;
+  font-family: 'Lato', sans-serif;
+ 
+        
+}
+
+
+/* Buttons */
+
+#home-btn {
+  height:25px;
+  width:100px;
+  margin-top:10px;
+  margin-left:2px;
+  background-color: #ECEEF1;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  color:#26B190;
+  font-size: 12px;
+  border:none;
+
+}
+
+#home-btn:hover {
+
+  height:25px;
+  width:100px;
+  margin-top:10px;
+  margin-left:2px;
+  background-color:#26B190;
+  color:white;
+  border:none;
+}
+
+#help-btn  {
+
+  height:25px;
+  width:100px;
+  margin-top:10px;
+  margin-left:2px;
+  background-color: #ECEEF1;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  color:#26B190;
+  font-size: 12px;
+  border:none;
+  
+}
+
+
+#help-btn:hover{
+
+  height:25px;
+  width:100px;
+  margin-top:10px;
+  margin-left:3px;
+  background-color:#26B190;
+  color:white;
+  border:none;
+  
+}
+
+#term-search-btn {
+
+  height:25px;
+  width:100px;
+  margin-top:10px;
+  margin-left:2px;
+  background-color: #ECEEF1;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  color:#26B190;
+  font-size: 12px;
+  border:none;
+  
+}
+
+
+
+#term-search-btn:hover {
+
+  height:25px;
+  width:100px;
+  margin-top:10px;
+  margin-left:3px;
+  background-color:#26B190;
+  color:white;
+  border:none;
+  
+}
+
+#term_search{
+
+  background:none;
+  border-bottom:2px double  #26B190;
+  border-top:2px double  #26B190;
+  border-right:2px double  #26B190;
+  border-left:2px double  #26B190;
+  padding: 3.9px;
+
+}
+
+#term_search {
+  color: #A1A9B1;
+}
+
+/* Highlighted Search Text */
+
+
+h5{
+  font-size: 15px;
+  letter-spacing: 2px;
+  color:  #26B190;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+
+	
+}
+
+
+.query_match {
+
+  background: #26B190;
+  color: #FFFFFF;
+  padding: 2px;
+  
+}
+
+
+
+/* Break */
+
+#break{
+
+
+  margin-top:30px;
+
+
+}
+
+
+
+
+/* Controls/Accordion - Left Column */
+
+#controls {
+
+  float: left;
+  height: 100%;
+  width: 228px;
+  padding: 10px;
+  padding-bottom: 10px;
+  display: inline;
+  font-size: 10px;
+  margin: 10px;
+  background: #ECEEF1;
+ 
+}
+
+
+#controls ul {
+
+  list-style-type: none;
+  margin-left: -4em;
+  margin-top: -1em;
+  
+}
+
+
+#controls li {
+
+  font-size: 12px;
+  text-decoration: none;
+  list-style-type: none;
+  text-indent: -1em;
+  color: #A1A9B1;
+  cursor: pointer;
+  
+}
+
+
+#controls li.active,#controls li:hover {
+
+  color: #26B190;
+  text-decoration: underline;
+  
+}
+
+
+
+  
+  .ui-accordion .ui-accordion-header {
+ 
+  
+  font-weight: normal;
+  font-size: 13px;
+  background-color: #26B190;
+  padding: 8px;
+  color:#ffffff;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  
+}
+
+.ui-accordion .ui-accordion-header:hover {
+ 
+  
+   font-weight: normal;
+   font-size: 13px;
+   background-color: #0F1419;
+   padding: 8px;
+   color:#ffffff;
+   font-family: 'Lato', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   
+}
+
+
+
+
+
+.ui-accordion .ui-accordion-content {
+
+	padding:2em 6.0em;
+	line-height: 3em;
+	border-top: 0;
+	overflow: auto;
+	
+}
+
+/* Help / Dialog Help */
+
+#dialog {
+  
+  border:5px solid #ffffff;
+  background-color:#26B190;
+  color:#ffffff;
+  font-size:12px;
+  padding-top:25px;
+  padding-bottom: 25px;
+  padding-left:60px;
+  padding-right: 60px;
+  text-align: center;
+  text-align: justify;
+  box-shadow: 0 0 7px black;
+  
+}
+
+#dialog h1 {
+
+  font-size: 17.5px;
+  text-align: left;
+
+}
+
+
+
+/* Main Output Content Area*/
+
+#mainOutput {
+
+  float: left;
+  height: 681px;
+  width: 474px;
+  display: inline;
+  overflow: auto;
+  padding: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background:#ECEEF1;
+  
+}
+
+
+#bio h3 {
+
+  font-size: 15px;
+  letter-spacing: 3.5px;
+  color:  #0F1419;
+  font-weight:500;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+   
+}
+
+
+/* Play, Act, Scene */
+
+.actTitle {
+
+  font-size: 14px;
+  text-decoration: none;
+  list-style-type: none;
+  color: #0F1419;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  
+}
+
+.actTitle.active,.actTitle:hover {
+
+  color: #26B190;
+  
+}
+
+
+
+
+h1.actTitledisplay {
+
+  font-size: 14px;
+  text-decoration: none;
+  list-style-type: none;
+  color: #0F1419;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  
+}
+
+h4.sceneTitledisplay {
+
+  font-size: 12px;
+  text-decoration: none;
+  list-style-type: none;
+
+  font-weight: 500;
+  letter-spacing: 1px;
+
+
+  
+}
+
+  
+
+.dramatis {
+
+  color: #26B190;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
+}
+
+
+
+.lineNo {
+
+  float: right;
+  color: #26B190;
+  
+}
+
+
+.sceneTitle {
+
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 10px;
+  list-style-type: none;
+  color: #7C858E;
+  cursor: pointer;
+  
+}
+
+.sceneTitle.active,.sceneTitle:hover {
+
+  color: #26B190;
+ 
+}
+
+
+
+.speakerClass {
+
+color: #7C858E;
+line-height: 22px;
+
+}
+
+.currentAct{
+
+
+  font-size: 14px;
+  text-decoration: none;
+  list-style-type: none;
+  color: #0F1419;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+}
+
+
+/* Overview Button */
+
+#overview {
+
+  height:25px;
+  width:125px;
+  margin-top:0px;
+  margin-left:350px;
+  position:relative;
+  background-color:#7C858E;
+  text-transform: uppercase;
+  color:#ffffff;
+  border:none;
+  letter-spacing: 1px;
+  
+}
+
+#overview:hover {
+
+  background-color: #0F1419;
+
+}
+
+
+/* Side Info / Quotes / Play Info */
+
+#sideInfo {
+
+  float: right;
+  height: 701px;
+  width: 228px;
+  padding: 10px;
+  font-size: 12px;
+  margin-right: 28px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  background: #ECEEF1;
+ 
+}
+
+
+
+#sideInfo p {
+
+  font-size: 12px;
+  letter-spacing: 1px;
+  color:  #0F1419;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  text-decoration:
+  
+} 
+
+
+/* Side Info Headers */
+
+#sideInfo h3 {
+
+  font-size: 11px;
+  background:#26B190;
+  letter-spacing: 1.0px;
+  padding: 7px;
+  color:  #ffffff;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  text-align: center; 
+  
+}
+
+
+
+#sideInfo h4 {
+
+  font-size: 12px;
+  letter-spacing: 1px;
+  color:  #26B190;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  text-decoration:
+  
+} 
+
+
+
+/* Side Info Play Output */
+
+#sideInfo table {
+
+   font-size: 12px;
+   letter-spacing: 1px;
+   line-height: 30px;
+   color:  #0F1419;
+   font-family: 'Lato', sans-serif;
+   text-align: left;
+   
+   
+} 
+  
+
+
+
+/* Selectbox for Select Speaker */
+
+
+
+select {
+
+    float: left;
+    border:  none;
+    height: 26px;
+    width: 85%;
+    background-color:   #7C858E;
+    font-size: 11px;
+    color: white;
+    
+}
+
+
+/* Footer */
+
+footer {
+
+   width: 100%;
+   height: 40px;
+   clear: both;
+   font-family: 'Lato', sans-serif; 
+   padding-top: 5px;
+ 
+}
+
+
+footer p {
+
+   text-align: center;
+
+}
+
+
+footer a {
+
+    color:#26B190;
+    text-decoration: none;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 11px;
+
+
+}
+
+
+footer a:hover {
+
+   color:#0F1419;
+   text-decoration: none;
+
+}
