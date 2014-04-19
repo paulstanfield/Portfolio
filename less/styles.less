@@ -1,6 +1,6 @@
 // Variables
 
-@primary: #28c3ab;
+@primary: #2F5B6B;
 @dark: #000;
 @light: #fff;
 
@@ -9,7 +9,8 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+   font-family: 'Lato', sans-serif;
+   font-family: 'Libre Baskerville', serif;
     color: @light;
     background-color: @dark;
 }
@@ -29,7 +30,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -132,7 +133,14 @@ a:focus {
     }
 }
 
- // Full Page Image Intro Section 
+ // Full Page Image Intro Section
+ 
+ .amp {
+font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+font-style: italic;
+font-weight: normal;
+font-size: 100px;
+} 
 
  .intro {
     display: table;
@@ -141,7 +149,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: @light;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/header.jpg) no-repeat bottom center scroll;
     background-color: @dark;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -152,10 +160,16 @@ a:focus {
 .intro-body {
     display: table-cell;
     vertical-align: middle;
+    font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+    font-style: italic;
+    letter-spacing: 2px;
 }
 
 .brand-heading {
     font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
 }
 
 .intro-text {
@@ -169,35 +183,16 @@ a:focus {
     }
 
     .brand-heading {
-        font-size: 100px;
+        font-size: 60px;
     }
 
     .intro-text {
         font-size: 25px;
+        
     }
 }
 
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid @light;
-    border-radius: 35px;
-    font-size: 40px;
-    color: @light;
-    background: transparent;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
 
-.btn-circle:hover,
-.btn-circle:focus {
-    outline: none;
-    color: @light;
-    background: rgba(255,255,255,0.1);
-}
 
 .page-scroll .btn-circle i.animated {
     -webkit-transition-property: -webkit-transform;
@@ -261,7 +256,7 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: @light;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(../img/services.jpg) no-repeat center center scroll;
     background-color: @dark;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -299,6 +294,7 @@ a:focus {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    border-radius:1px;
 }
 
 .btn-default {
@@ -366,4 +362,69 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,0.2);
+}
+
+
+.modal-backdrop {
+position: relative;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 1030;
+background-color: #000;
+}
+
+.modal-content {
+-webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.5); 
+box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+border-radius: 1px;
+}
+
+
+/* Services */
+
+.services {
+
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.service-item {
+  margin-bottom: 15px;
+}
+
+i.service-icon {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle; 
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid @light;
+    border-radius: 35px;
+    font-size: 40px;
+    color: @light;
+    background: transparent;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: none;
+    color: @light;
+    background: rgba(255,255,255,0.1);
 }
