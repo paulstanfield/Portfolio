@@ -1,7 +1,7 @@
 // Variables
 
 @primary: #2F5B6B;
-@dark: #000;
+@dark: #282B35;
 @light: #fff;
 
 // LESS
@@ -10,7 +10,7 @@ body {
     width: 100%;
     height: 100%;
    font-family: 'Lato', sans-serif;
-   font-family: 'Libre Baskerville', serif;
+   font-fsamily: 'Libre Baskerville', serif;
     color: @light;
     background-color: @dark;
 }
@@ -20,7 +20,7 @@ html {
     height: 100%;
 }
 
-// Typhography 
+// Typhography @
 
 h1,
 h2,
@@ -73,7 +73,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,0.3);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: @dark;
+    background-color: #282B35;
 }
 
 .navbar-brand {
@@ -114,10 +114,10 @@ a:focus {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+        padding: 0px 0;
         border-bottom: none;
         letter-spacing: 1px;
-        background: transparent;
+        background: #282B35;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -134,22 +134,16 @@ a:focus {
 }
 
  // Full Page Image Intro Section
- 
- .amp {
-font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
-font-style: italic;
-font-weight: normal;
-font-size: 100px;
-} 
+ 
 
  .intro {
     display: table;
     width: 100%;
     height: auto;
     padding: 100px 0;
-    text-align: center;
+    text-align: left;
     color: @light;
-    background: url(../img/header.jpg) no-repeat bottom center scroll;
+    background: url(../img/heroimage.jpg) no-repeat bottom center scroll;
     background-color: @dark;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -165,15 +159,27 @@ font-size: 100px;
     letter-spacing: 2px;
 }
 
+.home-intro {
+
+    margin-top: 140px;
+}
+
 .brand-heading {
-    font-size: 40px;
+    font-size: 100px;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     letter-spacing: 1px;
 }
 
-.intro-text {
+h2.intro-text {
     font-size: 18px;
+    text-transform: normal;
+}
+
+h3.intro-status {
+
+    text-transform: normal;
+    font-size: 14px;
 }
 
 @media(min-width:767px) {
@@ -183,7 +189,7 @@ font-size: 100px;
     }
 
     .brand-heading {
-        font-size: 60px;
+        font-size: 80px;
     }
 
     .intro-text {
@@ -210,6 +216,11 @@ font-size: 100px;
     -moz-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear;
+}
+
+.page-scroll {
+
+    text-align: center;
 }
 
 @-webkit-keyframes pulse {    

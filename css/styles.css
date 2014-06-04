@@ -2,9 +2,9 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Lato', sans-serif;
-  font-family: 'Libre Baskerville', serif;
+  font-fsamily: 'Libre Baskerville', serif;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #282b35;
 }
 html {
   width: 100%;
@@ -53,7 +53,7 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: blue;
+  background-color: #282B35;
 }
 .navbar-brand {
   font-weight: 700;
@@ -86,37 +86,31 @@ a:focus {
 }
 @media (min-width: 767px) {
   .navbar {
-    padding: 20px 0;
+    padding: 0px 0;
     border-bottom: none;
     letter-spacing: 1px;
-    background: transparent;
+    background: #282B35;
     -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   }
   .top-nav-collapse {
     padding: 0;
-    background-color: #000000;
+    background-color: #282b35;
   }
   .navbar-custom.top-nav-collapse {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
-.amp {
-  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 100px;
-}
-.intro {
+ .intro {
   display: table;
   width: 100%;
   height: auto;
   padding: 100px 0;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
-  background: url(../img/header.jpg) no-repeat bottom center scroll;
-  background-color: #000000;
+  background: url(../img/heroimage.jpg) no-repeat bottom center scroll;
+  background-color: #282b35;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -129,14 +123,22 @@ a:focus {
   font-style: italic;
   letter-spacing: 2px;
 }
+.home-intro {
+  margin-top: 140px;
+}
 .brand-heading {
-  font-size: 40px;
+  font-size: 100px;
   font-family: 'Lato', sans-serif;
   font-style: normal;
   letter-spacing: 1px;
 }
-.intro-text {
+h2.intro-text {
   font-size: 18px;
+  text-transform: normal;
+}
+h3.intro-status {
+  text-transform: normal;
+  font-size: 14px;
 }
 @media (min-width: 767px) {
   .intro {
@@ -144,7 +146,7 @@ a:focus {
     padding: 0;
   }
   .brand-heading {
-    font-size: 60px;
+    font-size: 80px;
   }
   .intro-text {
     font-size: 25px;
@@ -165,6 +167,9 @@ a:focus {
   -moz-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
+}
+.page-scroll {
+  text-align: center;
 }
 @-webkit-keyframes pulse {
   0 {
@@ -202,7 +207,7 @@ a:focus {
   padding: 50px 0;
   color: #ffffff;
   background: url(../img/services.jpg) no-repeat center center scroll;
-  background-color: #000000;
+  background-color: #282b35;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -243,7 +248,7 @@ a:focus {
 .btn-default:focus {
   border: 1px solid #2f5b6b;
   outline: none;
-  color: #000000;
+  color: #282b35;
   background-color: #2f5b6b;
 }
 .btn-huge {
