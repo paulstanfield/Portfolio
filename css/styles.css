@@ -109,8 +109,8 @@ a:focus {
   padding: 100px 0;
   text-align: left;
   color: #ffffff;
-  background: url(../img/heroimage.jpg) no-repeat bottom center scroll;
-  background-color: #282b35;
+  background-color: #6DB3F2;
+  background: /* top, transparent red, faked with gradient */ linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), /* bottom, image */ url(../img/2.jpg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -122,6 +122,7 @@ a:focus {
   font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
   font-style: italic;
   letter-spacing: 2px;
+  margin-top: 200px;
 }
 .home-intro {
   margin-top: 140px;
