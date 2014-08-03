@@ -1,2 +1,0 @@
-jQuery.extend({uniqueArray:function(a){if($.isArray(a)){var d={};var l,i;for(i=0,l=a.length;i<l;i++){var t=a[i].toString();if(d[t]){a.splice(i,1);l--;i--;}else{d[t]=true;}}}else{if(window.console)console.log('Not passing an a to uniqueArray, returning whatever you sent it - not filtered!');return(a);}
-return(a);}});
