@@ -54,6 +54,14 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
+h2 {
+  font-size: 23px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
 .img-centered {
 	margin: 0 auto;
 }
@@ -71,7 +79,9 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
 	.button-variant(white; @brand-primary; @brand-primary);
 	.heading-font;
-	font-weight: 700;
+	font-weight: 400;
+	border-radius: 1px;
+	font-size: 14px;
 }
 
 .btn-xl {
@@ -222,23 +232,25 @@ header {
 section {
     padding: 100px 0;
     h2.section-heading {
-		font-size: 40px;
+		font-size: 23px;
 		margin-top: 0;
 		margin-bottom: 15px;
     }
     h3.section-subheading {
-		font-size: 16px;
+		font-size: 14px;
+		padding-top: 20px;
+		line-height: 25px;
 		.serif-font;
 		text-transform: none;
 		font-style: italic;
 		font-weight: 400;
-		margin-bottom: 75px;
+		margin-bottom: 45px;
     }
 }
 
 @media(min-width:768px) {
 	section {
-		padding: 150px 0;
+		padding: 60px 0;
 	}
 }
 
@@ -304,7 +316,7 @@ section {
         	p {
         		.serif-font;
         		font-style: italic;
-        		font-size: 16px;
+        		font-size: 14px;
         		margin: 0;
         	}
         }
@@ -652,7 +664,6 @@ ul.social-buttons {
 	    text-align: center;
 		h2 {
 	    	margin-bottom: 15px;
-	    	font-size: 3em;
 		}
 		p {
 			margin-bottom: 30px;
@@ -661,7 +672,7 @@ ul.social-buttons {
 			margin: 20px 0 30px;
 			.serif-font;
 			font-style: italic;
-			font-size: 16px;
+			font-size: 14px;
 		}
 		ul.list-inline {
 			margin-bottom: 30px;
@@ -669,6 +680,7 @@ ul.social-buttons {
 		}
 		img {
 			margin-bottom: 30px;
+			border: 1px solid #ececec;
 		}
 	}
     .close-modal {
@@ -732,10 +744,28 @@ body {
     webkit-tap-highlight-color: @brand-primary;
 }
 
-
-
 .close-project {
-  
   background-color: none;
   color: @brand-primary;
+}
+
+.social-list {
+  text-align: center;
+  list-style: none;
+  padding-left: 0px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  font-size: 14px;
+  li {
+   display: inline-block;
+   padding-right: 5px;
+   padding-left: 5px;
+     }
+}
+
+.rights {
+  text-align: center;
+  font-style: italic;
+  color: #d1cfcf;
+  font-size: 12px;
 }
