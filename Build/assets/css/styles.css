@@ -54,6 +54,10 @@ body {
   background-color: #00cbb5;
   color: white; }
 
+.btn-secondary:hover {
+  background-color: #00c0ab;
+  color: white; }
+
 .btn-alternative {
   background-color: white;
   color: #00cbb5; }
@@ -531,5 +535,51 @@ body {
   letter-spacing: 1px;
   font-weight: 100 !important; }
 
-/* ----------------------------------------------------------------------------------------------------------------------------- Portfolio Media Queries */
 /* ----------------------------------------------------------------------------------------------------------------------------- Blog Main Styles */
+/* ----------------------------------------------------------------------------------------------------------------------------- Media Queries */
+/* Phone Portrait */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar-brand img {
+    width: 40px;
+    padding-top: 6px; }
+
+  .navbar {
+    background: #29355c; }
+
+  .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus, .navbar-custom .nav li a.active {
+    background-color: #00cbb5;
+    color: white; }
+
+  .get-in-touch {
+    outline: none;
+    margin-left: 0px; }
+
+  .get-in-touch:hover {
+    outline: 0; }
+
+  .service {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+
+  .dribbble h3 {
+    font-size: 22px; }
+  .dribbble ul li {
+    margin-left: -20px !important; }
+
+  .about img {
+    width: 60%; }
+  .about .btn-alternative {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: #00c0ab; }
+
+  .blog-excerpts {
+    padding-left: 15px; }
+
+  .footer {
+    text-align: center; } }
+/* Phone Landscape */
+/* Tablet Portrait */
+/* Tablet Landscape */
