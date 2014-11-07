@@ -76,6 +76,11 @@ body {
   color: $white;
 }
 
+.btn-secondary:hover {
+	background-color: mix( $secondary, #000, 95 );
+	color: $white;
+}
+
 .btn-alternative {
   background-color: $white;
   color: $secondary;
@@ -684,8 +689,108 @@ body {
   }
 }
 
-/* ----------------------------------------------------------------------------------------------------------------------------- Portfolio Media Queries */
-
-
 /* ----------------------------------------------------------------------------------------------------------------------------- Blog Main Styles */
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- Media Queries */
+
+/* Phone Portrait */
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+.navbar-brand {
+	img {
+		width: 40px;
+		padding-top: 6px;
+	}
+}
+
+.navbar {
+	background: $primary;
+}
+
+.navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus, .navbar-custom .nav li a.active {
+	background-color: $secondary;
+	color: $white;
+}
+
+.get-in-touch {
+	outline: none;
+	margin-left: 0px;
+}
+
+.get-in-touch:hover {
+	outline: 0;
+}
+
+.service {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.dribbble {
+	h3 {
+		font-size: 22px;
+	}
+	ul {
+
+		li {
+			margin-left: -20px !important;
+		}
+	}
+}
+
+.about {
+	img {
+		width: 60%;
+	}
+	.btn-alternative {
+		width: 100%;
+		margin-left: 0px;
+		margin-top: 20px;
+		margin-bottom: 40px;
+		background: mix( $secondary, #000, 95 );
+	}
+}
+
+.blog-excerpts {
+	padding-left: 15px;
+}
+
+.footer {
+   text-align: center;
+}
+
+}
+
+/* Phone Landscape */
+
+@media only screen and (min-width : 480px) and (max-width : 970px) {
+
+}
+
+@media only screen and (min-width : 480px) and (max-width : 768px){
+
+}
+
+/* Tablet Portrait */
+
+@media only screen and (min-width : 768px) and (max-width : 991px){
+
+}
+
+/* Tablet Landscape */
+
+@media only screen and (min-width : 970px) and (max-width : 1200px){
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+}
+
+
+
+
+
 
