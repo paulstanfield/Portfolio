@@ -159,12 +159,6 @@ body {
   background: rgba(255, 255, 255, 0.1); }
 
 .btn-circle i.animated {
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-duration: 1s;
-  -moz-transition-property: -moz-transform;
-  -moz-transition-duration: 1s; }
-
-.btn-circle:hover i.animated {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
   -webkit-animation-duration: 1.5s;
@@ -173,6 +167,12 @@ body {
   -moz-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear; }
+
+.btn-circle:hover i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s; }
 
 @-webkit-keyframes pulse {
   0 {
@@ -442,12 +442,12 @@ body {
     outline: 2px solid white;
     margin-left: 35px;
     color: white;
-    text-decoration: none; }
-  .about .btn-alternative:hover {
-    background-color: white;
-    color: #00cbb5;
-    outline: 2px solid #00cbb5;
+    text-decoration: none;
     border-bottom-color: transparent; }
+  .about .btn-alternative:hover {
+    background-color: transparent;
+    text-decoration: underline;
+    color: white; }
   .about a {
     color: white;
     border-bottom: 1px solid white; }
@@ -466,7 +466,8 @@ body {
 .blog-excerpts {
   padding-left: 100px; }
   .blog-excerpts ul {
-    padding-left: 0px; }
+    padding-left: 0px;
+    padding-top: 2px; }
     .blog-excerpts ul li {
       border-bottom: 2px solid rgba(255, 255, 255, 0.3);
       list-style: none;
@@ -486,6 +487,10 @@ body {
       text-transform: none;
       margin-top: 0px;
       font-style: italic; }
+    .blog-excerpts ul a {
+      border-bottom: none; }
+    .blog-excerpts ul span a:hover {
+      border-bottom: none; }
 
 /* Contact */
 .contact {
@@ -496,30 +501,33 @@ body {
     font-family: "chaparral-pro",sans-serif;
     font-style: italic;
     font-weight: 400; }
-  .contact ul li {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: 18px;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin-right: 10px; }
-  .contact ul .fa {
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 10px 12px;
-    border-radius: 30px;
-    color: #29355c; }
-  .contact ul .fa:hover {
-    -webkit-transition: background .4s ease-in-out;
-    -moz-transition: background .4s ease-in-out;
-    transition: background .4s ease-in-out;
-    background-color: #00cbb5;
-    color: white; }
+  .contact ul {
+    padding-left: 0px; }
+    .contact ul li {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: 18px;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin-right: 10px; }
+    .contact ul .fa {
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 10px 12px;
+      border-radius: 30px;
+      color: #29355c; }
+    .contact ul .fa:hover {
+      -webkit-transition: background .4s ease-in-out;
+      -moz-transition: background .4s ease-in-out;
+      transition: background .4s ease-in-out;
+      background-color: #00cbb5;
+      color: white; }
   .contact .btn-alternative {
     background-color: transparent;
     color: white;
     outline: 2px solid white;
-    margin: 50px 0px 50px 0px; }
+    margin: 50px 0px 50px 0px;
+    min-width: 255px; }
 
 /* Footer */
 .footer {
@@ -528,8 +536,13 @@ body {
   color: rgba(255, 255, 255, 0.5);
   font-family: 'proxima_nova_light', Helvetica, sans-serif;
   font-size: 11px;
-  letter-spacing: 1px;
-  font-weight: 100 !important; }
+  letter-spacing: 1px; }
+  .footer .page-scroll {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 12px;
+    border-radius: 30px;
+    color: #29355c;
+    font-weight: 800; }
 
 /* ----------------------------------------------------------------------------------------------------------------------------- Portfolio Media Queries */
 /* ----------------------------------------------------------------------------------------------------------------------------- Blog Main Styles */
