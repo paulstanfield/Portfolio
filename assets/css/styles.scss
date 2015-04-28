@@ -143,7 +143,7 @@ body {
 }
 
 .get-in-touch {
-  margin-left: 60px;
+  margin-left: 25px;
   outline:2px solid $white;
 }
 
@@ -353,6 +353,17 @@ body {
 .project-3 {
   background-color: $primary;
   color: $white;
+}
+
+.project-4 {
+  background-color: $mgrey;
+  color: $primary;
+   background: url(projects-image.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .projects {

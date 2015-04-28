@@ -103,7 +103,7 @@ body {
   color: white; }
 
 .get-in-touch {
-  margin-left: 60px;
+  margin-left: 25px;
   outline: 2px solid white; }
 
 .get-in-touch:hover {
@@ -272,6 +272,16 @@ body {
 .project-3 {
   background-color: #29355c;
   color: white; }
+
+.project-4 {
+  background-color: #ececec;
+  color: #29355c;
+  background: url(../img/projects-image.jpg) no-repeat bottom center scroll;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
 
 .projects {
   padding: 60px 0px 60px 0px; }
