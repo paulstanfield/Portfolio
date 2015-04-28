@@ -280,7 +280,7 @@ body {
 
 .brand-tagline {
   font-size: 30px;
-  line-height: 1;
+  line-height: 35px;
   text-transform: none;
   color: $secondary;
   z-index: 1001;
@@ -405,15 +405,16 @@ body {
 }
 
 .shot{
-	float: left;
-	border: 2px solid $mgrey;
+  margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .shot img{
-	max-width: 300px;
+	max-width: 100%;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
+	border: 2px solid $mgrey;
 }
 
 .dribbble .grid {
@@ -447,7 +448,7 @@ body {
 }
 
 .grid figure img {
-	max-width: 300px;
+	max-width: 100%;
 	position: relative;
 }
 
@@ -463,7 +464,7 @@ body {
 .dribbble .grid figcaption h3 {
 	margin: 0;
 	padding: 0;
-	margin-top: 22%;
+	margin-top: 25%;
 	font-size: 1.8em;
 	letter-spacing: 0;
 	color: $white;
@@ -561,7 +562,7 @@ body {
     img {
       width: 15%;
       margin: 60px 0px 50px 0px;
-      background: #029A88;
+      background: mix( $secondary, #000, 90 );
       border-radius: 200px;
       padding: 3px;
     }
@@ -608,14 +609,14 @@ body {
 .blog-excerpts {
   ul {
     padding-left: 0px;
-    padding-top: 0px;
+    padding-top: 1px;
     li {
       border-bottom: 2px solid rgba(255,255,255,.3);
       list-style: none;
-      padding-top: 10px;
+      padding-top: 5px;
       padding-bottom: 10px;
       margin-bottom: 10px;
-      margin-top: 10px;
+      margin-top: 8px;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: 500;
@@ -835,13 +836,6 @@ h2 {
 	h3 {
 		font-size: 20px;
 	}
-	ul {
-
-		li {
-			margin-left: -2.4em !important;
-			margin-right: 0px !important;
-		}
-	}
 }
 
 .about {
@@ -949,11 +943,23 @@ display: none;
 
 @media only screen and (min-width : 768px) and (max-width : 991px){
 
+.about {
+  img {
+    width: 30%;
+  }
+}
+
 }
 
 /* Tablet Landscape */
 
 @media only screen and (min-width : 970px) and (max-width : 1200px){
+
+.projects {
+  h4 {
+    padding-top: 10px;
+  }
+}
 
 }
 
