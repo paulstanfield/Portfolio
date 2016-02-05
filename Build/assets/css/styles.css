@@ -4,7 +4,6 @@
 @font-face {
   font-family: 'proxima_nova';
   src: url("/assets/fonts/proxima_nova/ProximaNova-Regular.otf"); }
-
 /* ----------------------------------------------------------------------------------------------------------------------------- Portfolio Main Styles */
 h1 {
   font-family: "futura-pt",sans-serif;
@@ -44,22 +43,22 @@ body {
   font-size: 14px; }
 
 .btn-primary {
-  background-color: #29355c; }
+  background-color: #29355C; }
 
 .btn-primary:hover {
-  background-color: #242f52; }
+  background-color: #253053; }
 
 .btn-secondary {
-  background-color: #00cbb5;
-  color: white; }
+  background-color: #00CBB5;
+  color: #fff; }
 
 .btn-secondary:hover {
-  background-color: #00c0ab;
-  color: white; }
+  background-color: #00c1ac;
+  color: #fff; }
 
 .btn-alternative {
-  background-color: white;
-  color: #00cbb5; }
+  background-color: #fff;
+  color: #00CBB5; }
 
 /* Navigation */
 .navbar-brand img {
@@ -96,18 +95,18 @@ body {
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
-  color: #00cbb5;
+  color: #00CBB5;
   background: none; }
 
 .navbar-toggle {
-  color: white; }
+  color: #fff; }
 
 .get-in-touch {
   margin-left: 60px;
-  outline: 2px solid white; }
+  outline: 2px solid #fff; }
 
-.get-in-touch:hover {
-  outline: 2px solid #00cbb5; }
+.get-in-touch:hover, .get-in-touch:focus {
+  outline: 2px solid #00CBB5; }
 
 @media (min-width: 767px) {
   .navbar {
@@ -132,9 +131,9 @@ body {
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: white;
+  color: #fff;
   background: url(../img/header-image.jpg) no-repeat bottom center scroll;
-  background-color: #29355c;
+  background-color: #29355C;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -157,8 +156,8 @@ body {
 .btn-circle:hover,
 .btn-circle:focus {
   outline: 0;
-  border-color: #00cbb5;
-  color: #00cbb5;
+  border-color: #00CBB5;
+  color: #00CBB5;
   background: rgba(255, 255, 255, 0.1); }
 
 .btn-circle i.animated {
@@ -178,31 +177,25 @@ body {
   -moz-transition-duration: 1s; }
 
 @-webkit-keyframes pulse {
-  0 {
+  0% {
     -webkit-transform: scale(1);
     transform: scale(1); }
-
   50% {
     -webkit-transform: scale(1.2);
     transform: scale(1.2); }
-
   100% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
-
 @-moz-keyframes pulse {
-  0 {
+  0% {
     -moz-transform: scale(1);
     transform: scale(1); }
-
   50% {
     -moz-transform: scale(1.2);
     transform: scale(1.2); }
-
   100% {
     -moz-transform: scale(1);
     transform: scale(1); } }
-
 .brand-heading {
   font-size: 80px;
   line-height: 1;
@@ -217,7 +210,7 @@ body {
   font-size: 30px;
   line-height: 35px;
   text-transform: none;
-  color: #00cbb5;
+  color: #00CBB5;
   z-index: 1001;
   font-weight: 100;
   margin-top: 30px;
@@ -230,12 +223,12 @@ body {
   font-weight: 400;
   letter-spacing: 2px; }
   .brand-status span {
-    color: #00cbb5; }
+    color: #00CBB5; }
 
 /* Services */
 .services {
-  background-color: #00cbb5;
-  color: white;
+  background-color: #00CBB5;
+  color: #fff;
   padding: 35px 0px 60px 0px; }
   .services h4 {
     text-transform: uppercase;
@@ -256,12 +249,12 @@ body {
 
 /* Projects */
 .project-1 {
-  background-color: white;
-  color: #29355c; }
+  background-color: #fff;
+  color: #29355C; }
 
 .project-2 {
   background-color: #ececec;
-  color: #29355c;
+  color: #29355C;
   background: url(../img/projects-image.jpg) no-repeat bottom center scroll;
   background-color: #000;
   -webkit-background-size: cover;
@@ -270,8 +263,8 @@ body {
   -o-background-size: cover; }
 
 .project-3 {
-  background-color: #29355c;
-  color: white; }
+  background-color: #29355C;
+  color: #fff; }
 
 .projects {
   padding: 60px 0px 60px 0px; }
@@ -290,19 +283,19 @@ body {
 /* Dribbble */
 .dribbble {
   text-align: center;
-  background: white;
+  background: #fff;
   float: left;
   width: 100%;
   text-align: center;
   padding: 60px 0px 60px 0px; }
   .dribbble h3 {
-    color: #00cbb5;
+    color: #00CBB5;
     padding-bottom: 15px; }
   .dribbble h4 {
     font-family: "chaparral-pro",sans-serif;
     font-style: italic;
     font-weight: 400;
-    color: #29355c;
+    color: #29355C;
     line-height: 30px;
     font-size: 19px;
     margin-bottom: 35px; }
@@ -358,7 +351,7 @@ body {
   left: 0;
   padding: 20px;
   background: rgba(234, 76, 137, 0.75);
-  color: white; }
+  color: #fff; }
 
 .dribbble .grid figcaption h3 {
   margin: 0;
@@ -366,12 +359,12 @@ body {
   margin-top: 25%;
   font-size: 1.8em;
   letter-spacing: 0;
-  color: white;
+  color: #fff;
   text-transform: none; }
 
 .dribbble .grid figcaption h4 {
   margin-top: 10px;
-  color: white;
+  color: #fff;
   font-size: 18px; }
 
 .dribbble .grid figcaption h4:hover {
@@ -438,10 +431,10 @@ body {
 /* About */
 .about {
   padding: 60px 0px 60px 0px;
-  background-color: #00cbb5;
-  color: white;
+  background-color: #00CBB5;
+  color: #fff;
   background: url(../img/about-image.jpg) no-repeat bottom center scroll;
-  background-color: #00cbb5;
+  background-color: #00CBB5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -449,7 +442,7 @@ body {
   .about img {
     width: 15%;
     margin: 60px 0px 50px 0px;
-    background: #00b6a2;
+    background: #00b7a3;
     border-radius: 200px;
     padding: 3px; }
   .about h4 {
@@ -460,21 +453,21 @@ body {
     padding-bottom: 10px; }
   .about .btn-alternative {
     background-color: transparent;
-    outline: 2px solid white;
+    outline: 2px solid #fff;
     margin-left: 35px;
-    color: white;
+    color: #fff;
     text-decoration: none;
     border-bottom-color: transparent; }
   .about .btn-alternative:hover {
     background-color: transparent;
     text-decoration: underline;
-    color: white; }
+    color: #fff; }
   .about a {
-    color: white;
-    border-bottom: 1px solid white; }
+    color: #fff;
+    border-bottom: 1px solid #fff; }
   .about a:hover {
-    color: #29355c;
-    border-bottom: 1px solid #29355c;
+    color: #29355C;
+    border-bottom: 1px solid #29355C;
     text-decoration: none; }
   .about p {
     font-size: 15px;
@@ -501,8 +494,8 @@ body {
     .blog-excerpts ul li a {
       border-bottom: none; }
     .blog-excerpts ul li a:hover {
-      color: white;
-      border-bottom: 1px solid white; }
+      color: #fff;
+      border-bottom: 1px solid #fff; }
     .blog-excerpts ul li span {
       font-size: 14px;
       font-family: "chaparral-pro",sans-serif;
@@ -514,8 +507,8 @@ body {
 /* Contact */
 .contact {
   padding: 60px 0px 60px 0px;
-  background-color: #29355c;
-  color: white;
+  background-color: #29355C;
+  color: #fff;
   background: url(../img/contact-image.jpg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -528,7 +521,7 @@ body {
     font-family: "chaparral-pro",sans-serif;
     font-style: italic;
     font-weight: 400;
-    color: #00cbb5;
+    color: #00CBB5;
     line-height: 30px;
     font-size: 19px;
     text-align: center; }
@@ -547,13 +540,13 @@ body {
       background-color: rgba(255, 255, 255, 0.3);
       padding: 10px 12px;
       border-radius: 30px;
-      color: white; }
+      color: #fff; }
     .contact ul .fa:hover {
       -webkit-transition: background .4s ease-in-out;
       -moz-transition: background .4s ease-in-out;
       transition: background .4s ease-in-out;
-      background-color: #00cbb5;
-      color: white;
+      background-color: #00CBB5;
+      color: #fff;
       border-bottom: none; }
     .contact ul a {
       border-bottom: none; }
@@ -561,14 +554,14 @@ body {
       border-bottom: none; }
   .contact .btn-alternative {
     background-color: transparent;
-    color: white;
+    color: #fff;
     font-size: 18px;
     padding: 0px;
     margin-bottom: 30px;
     border-bottom: 1px solid transparent; }
   .contact .btn-alternative:hover {
     outline: 0;
-    border-bottom: 1px solid white; }
+    border-bottom: 1px solid #fff; }
   .contact img {
     width: 30px;
     margin-right: 20px; }
@@ -588,12 +581,12 @@ body {
     padding-bottom: 5px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.3); }
   .contact a {
-    color: white;
-    border-bottom: 1px solid white; }
+    color: #fff;
+    border-bottom: 1px solid #fff; }
   .contact a:hover {
-    color: #e9eaee;
+    color: #eaebef;
     text-decoration: none;
-    border-bottom: 1px solid #e9eaee; }
+    border-bottom: 1px solid #eaebef; }
   .contact p {
     margin-bottom: 25px; }
   .contact .call {
@@ -601,13 +594,13 @@ body {
   .contact .email a, .contact .call a {
     border-bottom-color: transparent !important; }
   .contact .email a:hover, .contact .call a:hover {
-    border-bottom: 1px solid #e9eaee !important; }
+    border-bottom: 1px solid #eaebef !important; }
 
 /* Footer */
 .footer {
   padding: 20px 0px 10px 0px;
   background-color: #232E4F;
-  color: #949aad;
+  color: #949aae;
   font-family: 'proxima_nova', Helvetica, sans-serif;
   font-size: 11px;
   letter-spacing: 1px; }
@@ -619,7 +612,7 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 10px 12px;
     border-radius: 30px;
-    color: #29355c;
+    color: #29355C;
     font-weight: 800; }
 
 /* ----------------------------------------------------------------------------------------------------------------------------- Blog Main Styles */
@@ -631,11 +624,11 @@ body {
     padding-top: 6px; }
 
   .navbar {
-    background: #29355c; }
+    background: #29355C; }
 
   .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus, .navbar-custom .nav li a.active {
-    background-color: #00cbb5;
-    color: white; }
+    background-color: #00CBB5;
+    color: #fff; }
 
   .get-in-touch {
     outline: none;
@@ -661,7 +654,7 @@ body {
     margin-left: 0px;
     margin-top: 20px;
     margin-bottom: 40px;
-    background: #00c0ab; }
+    background: #00c1ac; }
 
   .blog-excerpts {
     padding-left: 15px; }
@@ -678,11 +671,11 @@ body {
     padding-top: 6px; }
 
   .navbar {
-    background: #29355c; }
+    background: #29355C; }
 
   .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus, .navbar-custom .nav li a.active {
-    background-color: #00cbb5;
-    color: white; }
+    background-color: #00CBB5;
+    color: #fff; }
 
   .get-in-touch {
     outline: none;
@@ -707,7 +700,7 @@ body {
     margin-left: 0px;
     margin-top: 20px;
     margin-bottom: 40px;
-    background: #00c0ab; }
+    background: #00c1ac; }
 
   .blog-excerpts {
     padding-left: 15px; }

@@ -5,9 +5,9 @@
 <head>
 
     <meta charset="utf-8">
-    <title>Paul Stanfield | Freelance Web Design Belfast</title>
-    <meta name="description" content="Freelance Web Designer & Front-End Developer based in Belfast, Northern Ireland, with over three years experience. Experienced in responsive websites, HTML5, CSS3, jQuery and WordPress websites." />
-    <meta name="keywords" content="freelance, portfolio, web, designer, paul stanfield, belfast, northern ireland, html5, css3, jquery, html, css, wordpress, responsive" />
+    <title>Paul Stanfield | UI/UX Designer Belfast</title>
+    <meta name="description" content="Freelance UI/UX Designer based in Belfast, Northern Ireland, with over three years experience. Experienced in user interface design, user experience design, responsive websites, HTML5, CSS3, jQuery and WordPress websites." />
+    <meta name="keywords" content="freelance, portfolio, web, designer, paul stanfield, belfast, northern ireland, html5, css3, jquery, html, css, wordpress, responsive, user interface design, user experience design, ui, ux, ui/ux, ui design, ux design, ui/ux design" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="eNbwqgdzSnyLCaXO-aovN5e0ZwXjtxDj9-mao_iV92U" />
 
@@ -55,12 +55,13 @@
                 if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
                 ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
                 ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                window.onbeforeunload = function() { ws = null }
                 ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link'); 
-                    for (var i = 0; i < links.length;i++) { 
-                    var link = links[i]; 
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                  var links = document.getElementsByTagName('link');
+                    for (var i = 0; i < links.length;i++) {
+                    var link = links[i];
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
                       link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
                     }
                   }
@@ -121,8 +122,8 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading"><span class="meet">Meet</span> Paul</h1>
-                        <h2 class="brand-tagline">Freelance Web Designer &amp; Front End Developer</h2>
-                        <p class="brand-status"><span>-</span> Currently Available For Projects <span>-</span></p>
+                        <h2 class="brand-tagline">UI/UX Designer</h2>
+                        <p class="brand-status"><span>-</span>Available For Projects <span>-</span></p>
                         <a href="#work" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -139,25 +140,21 @@
             <h3>- What I Can Do For You -</h3>
           </div>
           <div class="col-md-3 service">
-            <img class="design" src="assets/img/webandui.png" />
             <h4>Web &amp; UI Design</h4>
             <p>Need a cutting edge website or an app offering great user experience and aesthetics? I love to design interfaces which put the users needs first.</p>
           </div>
 
           <div class="col-md-3 service">
-            <img class="dev" src="assets/img/frontenddev.png" />
             <h4>Web Development</h4>
             <p>Professional front end builds are the framework on which a great design can really shine. I build standards complaint code with the latest technologies.</p>
           </div>
 
           <div class="col-md-3 service">
-            <img class="identity"src="assets/img/logoandidentity.png" />
             <h4>Logo &amp; Identity</h4>
             <p>A brand is so much more than just a logo. I craft unique identities which tell the story of your business, focusing on your needs and core message. </p>
           </div>
 
           <div class="col-md-3 service">
-            <img class="consult" src="assets/img/digitalconsultancy.png" />
             <h4>Digital Consultancy</h4>
             <p>My expertise in building online experiences allows me to  analyse digital products in order to enhance their strengths and eradicate weaknesses.</p>
           </div>
@@ -227,7 +224,7 @@
 
           <div class="col-md-8">
             <h4>A Bit About Paul</h4>
-            <p>Paul Stanfield is a designer living and working in Belfast, Northern Ireland. With degrees in Creative Multimedia and Interactive Multimedia Design, he has over three years experience in studio, startup and freelance environments. His experiences have allowed him to design and develop a range of projects with clients large and small, including Dale Farm, Compass FA, Kiverco and CDE Global. Paul currently works as a freelance designer & front end developer.</p>
+            <p>Paul Stanfield is a designer living and working in Belfast, Northern Ireland. With degrees in Creative Multimedia and Interactive Multimedia Design, he has over three years experience in studio, startup and freelance environments. His experiences have allowed him to design and develop a range of projects with clients large and small, including Dale Farm, Compass FA, Kiverco and CDE Global. Paul currently works as a UI/UX Designer.</p>
 
 <p>Paul offers a wide range of services from website design and development that enhances lead generation and engagement to UI/UX design for applications looking an intuitive and organic experience. He focuses on delivering high quality and professional solutions in the areas of UI/UX design, web design, front end development and branding.</p>
 
@@ -253,9 +250,9 @@
           </div>
           <div class="col-md-4">
             <h5>Availability</h5>
-            <p>Paul currently works as freelance designer & front end developer focusing on UI/UX design, web design, front end development and branding.
+            <p>Paul is currently available for small to medium sized freelance projects as well as consultancy on the UI/UX of digital products. His day rate is available on request.</p>
 
-</br></br>He is currently available for projects.</p>
+</br></br></p>
           </div>
           <div class="col-md-4">
             <h5>Contact</h5>
@@ -279,7 +276,7 @@
     <section class="footer">
         <div class="container">
           <div class="col-md-12 text-center">
-            <p class="copyright">© Copyright 2015 Paul Stanfield. All Rights Reserved.</p>
+            <p class="copyright">© Copyright 2016 Paul Stanfield. All Rights Reserved.</p>
           </div>
     </section>
 
